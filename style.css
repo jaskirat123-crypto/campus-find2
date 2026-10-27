@@ -1,0 +1,176 @@
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #17243a;
+  background: #f5f8fc;
+  line-height: 1.6;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 8%;
+  background: white;
+  border-bottom: 1px solid #e5eaf1;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: 800;
+  color: #12335a;
+  text-decoration: none;
+}
+
+nav a {
+  margin-left: 20px;
+  color: #34445b;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.hero {
+  padding: 85px 8%;
+  background: linear-gradient(135deg, #12335a, #087e83);
+  color: white;
+}
+
+.hero h1 {
+  font-size: clamp(36px, 6vw, 60px);
+  line-height: 1.12;
+  margin: 12px 0;
+}
+
+.hero p {
+  max-width: 540px;
+}
+
+.eyebrow {
+  letter-spacing: 2px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.btn {
+  display: inline-block;
+  margin: 12px 8px 0 0;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  background: #0d9488;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #087e73;
+}
+
+.btn-light {
+  background: white;
+  color: #12335a;
+}
+
+.section {
+  padding: 55px 8%;
+}
+
+.section h2 {
+  font-size: 30px;
+}
+
+#search,
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 13px;
+  border: 1px solid #d7dfeb;
+  border-radius: 8px;
+  background: white;
+  font: inherit;
+}
+
+#search {
+  margin: 12px 0 25px;
+}
+
+.item-grid {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit, minmax(220px, 1fr)
+  );
+  gap: 20px;
+}
+
+.item-card {
+  padding: 22px;
+  background: white;
+  border: 1px solid #e4eaf2;
+  border-radius: 14px;
+  box-shadow: 0 5px 18px #17243a08;
+}
+
+.item-card h3 {
+  margin-bottom: 8px;
+}
+
+.tag {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 20px;
+  background: #d9f5ef;
+  color: #08695f;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.report-section {
+  background: #eaf2f8;
+}
+
+form {
+  max-width: 600px;
+  display: grid;
+  gap: 10px;
+}
+
+textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+footer {
+  padding: 22px;
+  text-align: center;
+  background: #12335a;
+  color: white;
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    padding: 16px 5%;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  nav a {
+    margin-left: 0;
+    margin-right: 12px;
+  }
+
+  .hero, .section {
+    padding: 40px 5%;
+  }
+}
